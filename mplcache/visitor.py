@@ -66,7 +66,7 @@ class ArtistHasher(ArtistSerializer):
         elif isinstance(o, (float, int)):
             self.write(b'%r' % o)
         elif isinstance(o, (tuple, list)):
-            self.write(b'%s' % len(o))
+            self.write(str(len(o)).encode('ascii'))
             for v in o:
                 self.write(v)
         else:
