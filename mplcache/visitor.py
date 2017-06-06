@@ -17,6 +17,10 @@ class ArtistVisitor:
 
 
 class ArtistSerializer(ArtistVisitor):
+    # TODO: This class should implement visit methods for all the leaf artists
+    # that are significant for a plot. Line2D is the most important one, but we
+    # also want to hash the Text leafs and such.
+
     def visit_Line2D(self, artist):
         # if artist.get_dashes():
         #     raise NotImplementedError('Line2D.dashes')
