@@ -13,7 +13,7 @@ renderer.
     >>> lines = ax.plot([0, 1], [1, 0], 'o')
     >>> hasher.visit(fig)
     >>> print(hasher.hash)
-    4082641862
+    3249677405
 '''
 
 from mplcache.check_cache import savefig, get_timings, print_timings
