@@ -2,7 +2,7 @@ import tempfile
 import unittest
 import subprocess
 
-from mplmock.check_cache import compute_file_hash
+from mplcache.check_cache import compute_file_hash
 
 import matplotlib.pyplot as plt
 
